@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <h2>Editar Mensagem</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-success">Salvar Alterações</button>
+            </form>
+            <a href="{% url 'lista_mensagens' mensagem.artista.id %}" class="btn btn-secondary">Voltar para Lista de Mensagens</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -70,6 +70,9 @@
             background-color: rgb(2, 100, 2);
             color: white;
         }
+        .artist-name {
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -89,7 +92,7 @@
                         <a class="nav-link" href="{% url 'artista_create' %}">Cadastrar Artista</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'artista_list' %}">Lista de Artistas</a>
+                        <a class="nav-link" href="{% url 'artistas_list' %}">Lista de Artistas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'evento_create' %}">Criar Evento</a>

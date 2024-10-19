@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <h2>Deletar Mensagem</h2>
+            <p>Você tem certeza que deseja deletar a mensagem "{{ mensagem.conteudo }}"?</p>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Confirmar e Deletar</button>
+                <a href="{% url 'lista_mensagens' mensagem.artista.id %}" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

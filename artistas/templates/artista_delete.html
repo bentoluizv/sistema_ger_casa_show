@@ -14,7 +14,7 @@
                     <form method="post" action="{% url 'artista_delete' artista.id %}">
                         {% csrf_token %}
                         <button type="submit" class="btn btn-danger">Excluir</button>
-                        <a href="{% url 'artista_list' %}" class="btn btn-secondary">Cancelar</a>
+                        <a href="{% url 'artistas_list' %}" class="btn btn-secondary">Cancelar</a>
                     </form>
                 </div>
             </div>

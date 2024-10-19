@@ -1,3 +1,15 @@
-venv
+venv/
+env/
 __pychache__/
-senha #8Bacana8n
+dist/
+build/
+db.sqlite3
+staticfiles
+Coverage reports
+.Coverage 
+pytest
+pytest.ini
+test_
+.pytest_cache/
+Celery
+celerybeat-schedule

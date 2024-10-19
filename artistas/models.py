@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 
 TIPO_CHAVE_CHOICES = [
@@ -19,3 +20,16 @@ class Artista(models.Model):
 
     def __str__(self):
         return self.nome
+
+class Mensagem(models.Model):
+    artista = models.ForeignKey(Artista, on_delete=models.CASCADE)
+    conteudo = models.TextField()
+    data_envio = models.DateTimeField(default=timezone.now)
+    enviada = models.BooleanField(default=False)
+    
+    def __str__(self):
+        return f"Mensagem para {self.artista.nome} agendada para {self.data_envio}"
+    
+    class Meta:
+        verbose_name = "Mensagem"
+        verbose_name_plural = "Mensagens"
