@@ -1,21 +1,26 @@
 ✌️Nome do Projeto: APP (Sistema de gerenciamento casa de shows)
 
--Criamos um controle de cadastro de pessoas, com os campos de: 
-'nome','cpf', 'telefone', 'banco', 'chave pix', 'tipo chave'.
+1-Criamos um controle de cadastro de pessoas, com os campos de: 
+'nome','cpf', 'telefone', 'banco', 'chave pix', 'tipo chave'
+'criar msgs', e-mail.
 
--Todo dia a meia noite, o sistema faz uma varredura nas msgs.
+2-Agendamento de: mensagens p watsap, e data e hora.
 
--Agendamento de: data e hora, e mensagens p watsap.
+3-Todo dia a meia noite, o sistema faz uma varredura nas msgs.
 
--Monitorar as mensagens, e quando tiver; disparar pro cel agendado.
+4-Monitora as mensagens, e quando tiver; dispara pro cel agendado.
 
--Monitorar as msg já enviadas, para não reenvia-las novamente.
+5-Monitorar as msg já enviadas, para não reenvia-las novamente.
 
-1-Criado em Python e Django com o comando(django-admin startproject app).
+6-Criado em Python e Django com o comando(django-admin startproject app).
 
-2-Ambiente virtual: (dhenv).
+7-Ambiente virtual: (dhenv).
 
-3-Criado as pastas (accounts, artistas, eventos) como aplicativos.
+8-Criado as pastas (accounts, artistas, eventos) como aplicativos.
 
-4-Usamos: django celery beat, RabbitMQ e vamos usar o swager
+9-Rodar o projeto: Python manage.py runserver.
+
+10-Fazer login na página do django.
+
+11-Usamos: django celery beat, RabbitMQ e vamos usar o swager
 pra documentar API.
