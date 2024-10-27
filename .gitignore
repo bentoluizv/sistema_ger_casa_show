@@ -1,15 +1,18 @@
 venv/
 env/
-__pychache__/
 dist/
 build/
-db.sqlite3
 staticfiles
 Coverage reports
-.Coverage 
+.Coverage
 pytest
 pytest.ini
 test_
-.pytest_cache/
 Celery
 celerybeat-schedule
+__pycache__/
+*.sqlite3
+*.pyc
+
+db.sqlite3
+**/__pycache__
